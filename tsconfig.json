@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "module": "esnext",
+    "moduleResolution": "Node",
     "target": "esnext",
     "jsx": "preserve",
     "lib": ["dom", "esnext"],
