@@ -19,6 +19,12 @@ module.exports = {
       },
       __key: 'pages',
     },
-    '@chakra-ui/gatsby-plugin',
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        isResettingCSS: true,
+        isUsingColorMode: true,
+      },
+    },
   ],
 };
