@@ -10,7 +10,20 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              noInlineHighlight: false,
+              classPrefix: 'language-',
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
