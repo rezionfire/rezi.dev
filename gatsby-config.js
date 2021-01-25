@@ -14,10 +14,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: './src/pages/',
+        name: 'blog',
+        path: './src/pages/blog',
       },
-      __key: 'pages',
+      __key: 'blog',
     },
     {
       resolve: '@chakra-ui/gatsby-plugin',
