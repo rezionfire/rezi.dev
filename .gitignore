@@ -5,3 +5,6 @@ public
 # ENVIRONMENT VARIABLES
 .env.production
 .env.development
+
+# .DS_Store
+.DS_Store
