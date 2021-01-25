@@ -8,7 +8,9 @@ export default extendTheme({
   styles: {
     global: {
       'h1,h2,h3,h4,h5,h6': {
-        fontWeight: 600,
+        fontWeight: 700,
+        mt: 7,
+        mb: 1,
       },
       p: {
         color: () => useColorModeValue('gray.600', 'gray.400'),
@@ -31,6 +33,9 @@ export default extendTheme({
       strong: {
         color: () => useColorModeValue('gray.800', 'gray.200'),
         fontWeight: 600,
+      },
+      pre: {
+        borderRadius: '4px',
       },
       table: {
         p: 0,
