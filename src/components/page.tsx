@@ -7,6 +7,10 @@ import {
 import React, { FC, useState } from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
+import { Global } from '@emotion/react';
+
+import Subscribe from './subscribe';
+import fonts from './font-face';
 
 type Meta = {
   title: string;
@@ -30,12 +34,13 @@ const Page: FC<Props> = ({ meta, children }) => {
         <meta name="description" content={meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
+      <Global styles={fonts} />
       <Container maxW="6xl">
         <Flex mt={10} mb={14}>
           <Box>
             {!showMenu && (
               <Link to="/">
-                <Button variant="ghost" leftIcon={<ChevronRightIcon />}>
+                <Button variant="ghost" leftIcon={<ChevronRightIcon />} ml={-4}>
                   rezionfire
                 </Button>
               </Link>
@@ -53,8 +58,8 @@ const Page: FC<Props> = ({ meta, children }) => {
           </Box>
           <Spacer />
           <Flex gridGap={4}>
-            <Box d={['none', 'none', 'block']}>
-              <Link to="/blog">
+            <Box d={['none', 'none', 'flex']} gridGap={4}>
+              <Link to="/">
                 <Button variant="ghost">Blog</Button>
               </Link>
               <Link to="/contact">
@@ -75,9 +80,12 @@ const Page: FC<Props> = ({ meta, children }) => {
             />
           </Flex>
         </Flex>
-        <Container>
-          {children}
-        </Container>
+      </Container>
+      <Container py={0} mt={20}>
+        {children}
+        <Box my={20}>
+          <Subscribe />
+        </Box>
       </Container>
     </>
   );
