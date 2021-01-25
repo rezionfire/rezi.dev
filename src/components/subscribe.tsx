@@ -73,7 +73,7 @@ const Subscribe: FC = () => {
       <Flex
         flexDirection="column"
         border="1px solid"
-        borderColor="gray.100"
+        borderColor={useColorModeValue('gray.100', 'gray.700')}
         borderRadius="4px"
         padding={4}
       >
