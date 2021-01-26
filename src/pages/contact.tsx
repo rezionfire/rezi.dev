@@ -35,7 +35,7 @@ const ContactPage: FC<PageProps> = () => (
       <Text>
         For business inquiries please reach me out on
         {' '}
-        <a href="https://linkedin.com/in/rezionfire" target="_blank" rel="noreferrer">Linkedin</a>
+        <a href="https://linkedin.com/in/rezionfire" target="_blank" rel="noreferrer">LinkedIn</a>
         {' '}
         or throught
         {' '}
