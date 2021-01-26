@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { graphql, Link } from 'gatsby';
 import {
   Box, Heading, Stack, Text, useColorModeValue,
@@ -24,8 +24,13 @@ type Props = {
   };
 };
 
-const IndexPage = ({ data }: Props) => (
-  <Page meta={{ title: 'hello', description: 'world' }}>
+const IndexPage: FC<Props> = ({ data }) => (
+  <Page
+    meta={{
+      title: 'JS/TS Engineer',
+      description: 'Blog about things I know. Mainly about web with JS/TS.',
+    }}
+  >
     <Box>
       <Heading size="xl" mb={4}>Blog</Heading>
       <Stack direction="column" spacing={6}>
