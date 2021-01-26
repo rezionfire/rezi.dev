@@ -39,6 +39,10 @@ const BlogTemplate: FunctionComponent<Props> = ({ data }) => {
               textDecoration: 'none',
             },
           },
+          'pre[class*="language-"]': {
+            fontSize: 16,
+            lineHeight: 2,
+          },
         }}
         dangerouslySetInnerHTML={{ __html: html }}
       />
