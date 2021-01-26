@@ -30,7 +30,11 @@ const Page: FC<Props> = ({ meta, children }) => {
   return (
     <>
       <Helmet>
-        <title>{meta.title}</title>
+        <title>
+          {meta.title}
+          {' '}
+          - rezionfire
+        </title>
         <meta name="description" content={meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
