@@ -21,7 +21,6 @@ export default extendTheme({
       ul: { p: 6 },
       ol: { p: 6 },
       li: {
-        // color: 'gray.800',
         color: () => useColorModeValue('gray.800', 'gray.100'),
         fontWeight: 600,
         '::marker': {
@@ -36,6 +35,7 @@ export default extendTheme({
       },
       pre: {
         borderRadius: '4px',
+        boxShadow: 'lg',
       },
       table: {
         p: 0,
