@@ -71,7 +71,7 @@ const Page: FC<Props> = ({ meta, children }) => {
               </Link>
             </Box>
             <IconButton
-              aria-label="Toggle theme"
+              aria-label="Toggle menu"
               icon={showMenu ? <CloseIcon /> : <HamburgerIcon />}
               onClick={toggleMenu}
               background="none"
