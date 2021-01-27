@@ -43,6 +43,13 @@ const BlogTemplate: FunctionComponent<Props> = ({ data }) => {
             fontSize: 16,
             lineHeight: 2,
           },
+          h2: {
+            fontSize: 24,
+            mt: 10,
+          },
+          img: {
+            borderRadius: 5,
+          },
         }}
         dangerouslySetInnerHTML={{ __html: html }}
       />
