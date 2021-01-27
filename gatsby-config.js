@@ -14,7 +14,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              wrapperStyle: 'box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);',
+            },
+          },
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
