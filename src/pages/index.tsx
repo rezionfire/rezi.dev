@@ -33,7 +33,7 @@ const IndexPage: FC<Props> = ({ data }) => (
   >
     <Box>
       <Heading size="xl" mb={4}>Blog</Heading>
-      <Stack direction="column" spacing={6}>
+      <Stack direction="column">
         {data.allMarkdownRemark.edges.map(({ node }) => {
           const { frontmatter } = node;
           const { slug, title, spoiler } = frontmatter;
