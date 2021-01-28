@@ -31,7 +31,7 @@ const Subscribe: FC = () => {
       }),
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Token ${process.env.GATSBY_BUTTONDOWN_API_KEY}`,
+        Authorization: `Token ${process.env.BUTTONDOWN_API_KEY}`,
       },
       method: 'POST',
     });
