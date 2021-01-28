@@ -7,10 +7,8 @@ import {
 import React, { FC, useState } from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
-import { Global } from '@emotion/react';
 
 import Subscribe from './subscribe';
-import fonts from './font-face';
 
 type Meta = {
   title: string;
@@ -38,7 +36,6 @@ const Page: FC<Props> = ({ meta, children }) => {
         <meta name="description" content={meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
-      <Global styles={fonts} />
       <Container maxW="6xl">
         <Flex mt={10} mb={14}>
           <Box>
