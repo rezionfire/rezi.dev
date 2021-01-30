@@ -48,7 +48,7 @@ const Page: FC<Props> = ({ meta, children }) => {
             )}
             {showMenu && (
               <Box d={['block', 'block', 'none']}>
-                <Link to="/blog">
+                <Link to="/">
                   <Button variant="ghost">Blog</Button>
                 </Link>
                 <Link to="/contact">
